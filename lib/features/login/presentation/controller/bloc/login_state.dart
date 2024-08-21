@@ -9,6 +9,8 @@ class LoginState with _$LoginState {
   const factory LoginState.loading() = Loading;
   const factory LoginState.authenticated(GoogleSignInAccount user) =
       Authenticated;
+  const factory LoginState.authenticatedFacebook(
+      Map<String, dynamic> userData) = AuthenticatedFacebook;
   const factory LoginState.unauthenticated() = Unauthenticated;
   const factory LoginState.error(String message) = Error;
 }

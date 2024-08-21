@@ -72,6 +72,24 @@ class LoginView extends StatelessWidget {
                       ),
                     ],
                   );
+                } else if (state is AuthenticatedFacebook) {
+                  return Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text('Welcome ${state.userData['name']}'),
+                      const SizedBox(height: 16),
+                      Text(state.userData['email']),
+                      const SizedBox(height: 16),
+                      ElevatedButton(
+                        onPressed: () {
+                          context
+                              .read<LoginBloc>()
+                              .add(const LoginEvent.logout());
+                        },
+                        child: const Text('Logout'),
+                      ),
+                    ],
+                  );
                 } else if (state is Error) {
                   return Text('Error: ${state.message}');
                 } else {

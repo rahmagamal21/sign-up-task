@@ -21,6 +21,8 @@ mixin _$LoginState {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(GoogleSignInAccount user) authenticated,
+    required TResult Function(Map<String, dynamic> userData)
+        authenticatedFacebook,
     required TResult Function() unauthenticated,
     required TResult Function(String message) error,
   }) =>
@@ -30,6 +32,7 @@ mixin _$LoginState {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(GoogleSignInAccount user)? authenticated,
+    TResult? Function(Map<String, dynamic> userData)? authenticatedFacebook,
     TResult? Function()? unauthenticated,
     TResult? Function(String message)? error,
   }) =>
@@ -39,6 +42,7 @@ mixin _$LoginState {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(GoogleSignInAccount user)? authenticated,
+    TResult Function(Map<String, dynamic> userData)? authenticatedFacebook,
     TResult Function()? unauthenticated,
     TResult Function(String message)? error,
     required TResult orElse(),
@@ -49,6 +53,8 @@ mixin _$LoginState {
     required TResult Function(Initial value) initial,
     required TResult Function(Loading value) loading,
     required TResult Function(Authenticated value) authenticated,
+    required TResult Function(AuthenticatedFacebook value)
+        authenticatedFacebook,
     required TResult Function(Unauthenticated value) unauthenticated,
     required TResult Function(Error value) error,
   }) =>
@@ -58,6 +64,7 @@ mixin _$LoginState {
     TResult? Function(Initial value)? initial,
     TResult? Function(Loading value)? loading,
     TResult? Function(Authenticated value)? authenticated,
+    TResult? Function(AuthenticatedFacebook value)? authenticatedFacebook,
     TResult? Function(Unauthenticated value)? unauthenticated,
     TResult? Function(Error value)? error,
   }) =>
@@ -67,6 +74,7 @@ mixin _$LoginState {
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
     TResult Function(Authenticated value)? authenticated,
+    TResult Function(AuthenticatedFacebook value)? authenticatedFacebook,
     TResult Function(Unauthenticated value)? unauthenticated,
     TResult Function(Error value)? error,
     required TResult orElse(),
@@ -139,6 +147,8 @@ class _$InitialImpl implements Initial {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(GoogleSignInAccount user) authenticated,
+    required TResult Function(Map<String, dynamic> userData)
+        authenticatedFacebook,
     required TResult Function() unauthenticated,
     required TResult Function(String message) error,
   }) {
@@ -151,6 +161,7 @@ class _$InitialImpl implements Initial {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(GoogleSignInAccount user)? authenticated,
+    TResult? Function(Map<String, dynamic> userData)? authenticatedFacebook,
     TResult? Function()? unauthenticated,
     TResult? Function(String message)? error,
   }) {
@@ -163,6 +174,7 @@ class _$InitialImpl implements Initial {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(GoogleSignInAccount user)? authenticated,
+    TResult Function(Map<String, dynamic> userData)? authenticatedFacebook,
     TResult Function()? unauthenticated,
     TResult Function(String message)? error,
     required TResult orElse(),
@@ -179,6 +191,8 @@ class _$InitialImpl implements Initial {
     required TResult Function(Initial value) initial,
     required TResult Function(Loading value) loading,
     required TResult Function(Authenticated value) authenticated,
+    required TResult Function(AuthenticatedFacebook value)
+        authenticatedFacebook,
     required TResult Function(Unauthenticated value) unauthenticated,
     required TResult Function(Error value) error,
   }) {
@@ -191,6 +205,7 @@ class _$InitialImpl implements Initial {
     TResult? Function(Initial value)? initial,
     TResult? Function(Loading value)? loading,
     TResult? Function(Authenticated value)? authenticated,
+    TResult? Function(AuthenticatedFacebook value)? authenticatedFacebook,
     TResult? Function(Unauthenticated value)? unauthenticated,
     TResult? Function(Error value)? error,
   }) {
@@ -203,6 +218,7 @@ class _$InitialImpl implements Initial {
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
     TResult Function(Authenticated value)? authenticated,
+    TResult Function(AuthenticatedFacebook value)? authenticatedFacebook,
     TResult Function(Unauthenticated value)? unauthenticated,
     TResult Function(Error value)? error,
     required TResult orElse(),
@@ -262,6 +278,8 @@ class _$LoadingImpl implements Loading {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(GoogleSignInAccount user) authenticated,
+    required TResult Function(Map<String, dynamic> userData)
+        authenticatedFacebook,
     required TResult Function() unauthenticated,
     required TResult Function(String message) error,
   }) {
@@ -274,6 +292,7 @@ class _$LoadingImpl implements Loading {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(GoogleSignInAccount user)? authenticated,
+    TResult? Function(Map<String, dynamic> userData)? authenticatedFacebook,
     TResult? Function()? unauthenticated,
     TResult? Function(String message)? error,
   }) {
@@ -286,6 +305,7 @@ class _$LoadingImpl implements Loading {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(GoogleSignInAccount user)? authenticated,
+    TResult Function(Map<String, dynamic> userData)? authenticatedFacebook,
     TResult Function()? unauthenticated,
     TResult Function(String message)? error,
     required TResult orElse(),
@@ -302,6 +322,8 @@ class _$LoadingImpl implements Loading {
     required TResult Function(Initial value) initial,
     required TResult Function(Loading value) loading,
     required TResult Function(Authenticated value) authenticated,
+    required TResult Function(AuthenticatedFacebook value)
+        authenticatedFacebook,
     required TResult Function(Unauthenticated value) unauthenticated,
     required TResult Function(Error value) error,
   }) {
@@ -314,6 +336,7 @@ class _$LoadingImpl implements Loading {
     TResult? Function(Initial value)? initial,
     TResult? Function(Loading value)? loading,
     TResult? Function(Authenticated value)? authenticated,
+    TResult? Function(AuthenticatedFacebook value)? authenticatedFacebook,
     TResult? Function(Unauthenticated value)? unauthenticated,
     TResult? Function(Error value)? error,
   }) {
@@ -326,6 +349,7 @@ class _$LoadingImpl implements Loading {
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
     TResult Function(Authenticated value)? authenticated,
+    TResult Function(AuthenticatedFacebook value)? authenticatedFacebook,
     TResult Function(Unauthenticated value)? unauthenticated,
     TResult Function(Error value)? error,
     required TResult orElse(),
@@ -412,6 +436,8 @@ class _$AuthenticatedImpl implements Authenticated {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(GoogleSignInAccount user) authenticated,
+    required TResult Function(Map<String, dynamic> userData)
+        authenticatedFacebook,
     required TResult Function() unauthenticated,
     required TResult Function(String message) error,
   }) {
@@ -424,6 +450,7 @@ class _$AuthenticatedImpl implements Authenticated {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(GoogleSignInAccount user)? authenticated,
+    TResult? Function(Map<String, dynamic> userData)? authenticatedFacebook,
     TResult? Function()? unauthenticated,
     TResult? Function(String message)? error,
   }) {
@@ -436,6 +463,7 @@ class _$AuthenticatedImpl implements Authenticated {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(GoogleSignInAccount user)? authenticated,
+    TResult Function(Map<String, dynamic> userData)? authenticatedFacebook,
     TResult Function()? unauthenticated,
     TResult Function(String message)? error,
     required TResult orElse(),
@@ -452,6 +480,8 @@ class _$AuthenticatedImpl implements Authenticated {
     required TResult Function(Initial value) initial,
     required TResult Function(Loading value) loading,
     required TResult Function(Authenticated value) authenticated,
+    required TResult Function(AuthenticatedFacebook value)
+        authenticatedFacebook,
     required TResult Function(Unauthenticated value) unauthenticated,
     required TResult Function(Error value) error,
   }) {
@@ -464,6 +494,7 @@ class _$AuthenticatedImpl implements Authenticated {
     TResult? Function(Initial value)? initial,
     TResult? Function(Loading value)? loading,
     TResult? Function(Authenticated value)? authenticated,
+    TResult? Function(AuthenticatedFacebook value)? authenticatedFacebook,
     TResult? Function(Unauthenticated value)? unauthenticated,
     TResult? Function(Error value)? error,
   }) {
@@ -476,6 +507,7 @@ class _$AuthenticatedImpl implements Authenticated {
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
     TResult Function(Authenticated value)? authenticated,
+    TResult Function(AuthenticatedFacebook value)? authenticatedFacebook,
     TResult Function(Unauthenticated value)? unauthenticated,
     TResult Function(Error value)? error,
     required TResult orElse(),
@@ -498,6 +530,182 @@ abstract class Authenticated implements LoginState {
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AuthenticatedImplCopyWith<_$AuthenticatedImpl> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$AuthenticatedFacebookImplCopyWith<$Res> {
+  factory _$$AuthenticatedFacebookImplCopyWith(
+          _$AuthenticatedFacebookImpl value,
+          $Res Function(_$AuthenticatedFacebookImpl) then) =
+      __$$AuthenticatedFacebookImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({Map<String, dynamic> userData});
+}
+
+/// @nodoc
+class __$$AuthenticatedFacebookImplCopyWithImpl<$Res>
+    extends _$LoginStateCopyWithImpl<$Res, _$AuthenticatedFacebookImpl>
+    implements _$$AuthenticatedFacebookImplCopyWith<$Res> {
+  __$$AuthenticatedFacebookImplCopyWithImpl(_$AuthenticatedFacebookImpl _value,
+      $Res Function(_$AuthenticatedFacebookImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of LoginState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? userData = null,
+  }) {
+    return _then(_$AuthenticatedFacebookImpl(
+      null == userData
+          ? _value._userData
+          : userData // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$AuthenticatedFacebookImpl implements AuthenticatedFacebook {
+  const _$AuthenticatedFacebookImpl(final Map<String, dynamic> userData)
+      : _userData = userData;
+
+  final Map<String, dynamic> _userData;
+  @override
+  Map<String, dynamic> get userData {
+    if (_userData is EqualUnmodifiableMapView) return _userData;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_userData);
+  }
+
+  @override
+  String toString() {
+    return 'LoginState.authenticatedFacebook(userData: $userData)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$AuthenticatedFacebookImpl &&
+            const DeepCollectionEquality().equals(other._userData, _userData));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_userData));
+
+  /// Create a copy of LoginState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$AuthenticatedFacebookImplCopyWith<_$AuthenticatedFacebookImpl>
+      get copyWith => __$$AuthenticatedFacebookImplCopyWithImpl<
+          _$AuthenticatedFacebookImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(GoogleSignInAccount user) authenticated,
+    required TResult Function(Map<String, dynamic> userData)
+        authenticatedFacebook,
+    required TResult Function() unauthenticated,
+    required TResult Function(String message) error,
+  }) {
+    return authenticatedFacebook(userData);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(GoogleSignInAccount user)? authenticated,
+    TResult? Function(Map<String, dynamic> userData)? authenticatedFacebook,
+    TResult? Function()? unauthenticated,
+    TResult? Function(String message)? error,
+  }) {
+    return authenticatedFacebook?.call(userData);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(GoogleSignInAccount user)? authenticated,
+    TResult Function(Map<String, dynamic> userData)? authenticatedFacebook,
+    TResult Function()? unauthenticated,
+    TResult Function(String message)? error,
+    required TResult orElse(),
+  }) {
+    if (authenticatedFacebook != null) {
+      return authenticatedFacebook(userData);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(Initial value) initial,
+    required TResult Function(Loading value) loading,
+    required TResult Function(Authenticated value) authenticated,
+    required TResult Function(AuthenticatedFacebook value)
+        authenticatedFacebook,
+    required TResult Function(Unauthenticated value) unauthenticated,
+    required TResult Function(Error value) error,
+  }) {
+    return authenticatedFacebook(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(Loading value)? loading,
+    TResult? Function(Authenticated value)? authenticated,
+    TResult? Function(AuthenticatedFacebook value)? authenticatedFacebook,
+    TResult? Function(Unauthenticated value)? unauthenticated,
+    TResult? Function(Error value)? error,
+  }) {
+    return authenticatedFacebook?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(Initial value)? initial,
+    TResult Function(Loading value)? loading,
+    TResult Function(Authenticated value)? authenticated,
+    TResult Function(AuthenticatedFacebook value)? authenticatedFacebook,
+    TResult Function(Unauthenticated value)? unauthenticated,
+    TResult Function(Error value)? error,
+    required TResult orElse(),
+  }) {
+    if (authenticatedFacebook != null) {
+      return authenticatedFacebook(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class AuthenticatedFacebook implements LoginState {
+  const factory AuthenticatedFacebook(final Map<String, dynamic> userData) =
+      _$AuthenticatedFacebookImpl;
+
+  Map<String, dynamic> get userData;
+
+  /// Create a copy of LoginState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$AuthenticatedFacebookImplCopyWith<_$AuthenticatedFacebookImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -544,6 +752,8 @@ class _$UnauthenticatedImpl implements Unauthenticated {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(GoogleSignInAccount user) authenticated,
+    required TResult Function(Map<String, dynamic> userData)
+        authenticatedFacebook,
     required TResult Function() unauthenticated,
     required TResult Function(String message) error,
   }) {
@@ -556,6 +766,7 @@ class _$UnauthenticatedImpl implements Unauthenticated {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(GoogleSignInAccount user)? authenticated,
+    TResult? Function(Map<String, dynamic> userData)? authenticatedFacebook,
     TResult? Function()? unauthenticated,
     TResult? Function(String message)? error,
   }) {
@@ -568,6 +779,7 @@ class _$UnauthenticatedImpl implements Unauthenticated {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(GoogleSignInAccount user)? authenticated,
+    TResult Function(Map<String, dynamic> userData)? authenticatedFacebook,
     TResult Function()? unauthenticated,
     TResult Function(String message)? error,
     required TResult orElse(),
@@ -584,6 +796,8 @@ class _$UnauthenticatedImpl implements Unauthenticated {
     required TResult Function(Initial value) initial,
     required TResult Function(Loading value) loading,
     required TResult Function(Authenticated value) authenticated,
+    required TResult Function(AuthenticatedFacebook value)
+        authenticatedFacebook,
     required TResult Function(Unauthenticated value) unauthenticated,
     required TResult Function(Error value) error,
   }) {
@@ -596,6 +810,7 @@ class _$UnauthenticatedImpl implements Unauthenticated {
     TResult? Function(Initial value)? initial,
     TResult? Function(Loading value)? loading,
     TResult? Function(Authenticated value)? authenticated,
+    TResult? Function(AuthenticatedFacebook value)? authenticatedFacebook,
     TResult? Function(Unauthenticated value)? unauthenticated,
     TResult? Function(Error value)? error,
   }) {
@@ -608,6 +823,7 @@ class _$UnauthenticatedImpl implements Unauthenticated {
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
     TResult Function(Authenticated value)? authenticated,
+    TResult Function(AuthenticatedFacebook value)? authenticatedFacebook,
     TResult Function(Unauthenticated value)? unauthenticated,
     TResult Function(Error value)? error,
     required TResult orElse(),
@@ -694,6 +910,8 @@ class _$ErrorImpl implements Error {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(GoogleSignInAccount user) authenticated,
+    required TResult Function(Map<String, dynamic> userData)
+        authenticatedFacebook,
     required TResult Function() unauthenticated,
     required TResult Function(String message) error,
   }) {
@@ -706,6 +924,7 @@ class _$ErrorImpl implements Error {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(GoogleSignInAccount user)? authenticated,
+    TResult? Function(Map<String, dynamic> userData)? authenticatedFacebook,
     TResult? Function()? unauthenticated,
     TResult? Function(String message)? error,
   }) {
@@ -718,6 +937,7 @@ class _$ErrorImpl implements Error {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(GoogleSignInAccount user)? authenticated,
+    TResult Function(Map<String, dynamic> userData)? authenticatedFacebook,
     TResult Function()? unauthenticated,
     TResult Function(String message)? error,
     required TResult orElse(),
@@ -734,6 +954,8 @@ class _$ErrorImpl implements Error {
     required TResult Function(Initial value) initial,
     required TResult Function(Loading value) loading,
     required TResult Function(Authenticated value) authenticated,
+    required TResult Function(AuthenticatedFacebook value)
+        authenticatedFacebook,
     required TResult Function(Unauthenticated value) unauthenticated,
     required TResult Function(Error value) error,
   }) {
@@ -746,6 +968,7 @@ class _$ErrorImpl implements Error {
     TResult? Function(Initial value)? initial,
     TResult? Function(Loading value)? loading,
     TResult? Function(Authenticated value)? authenticated,
+    TResult? Function(AuthenticatedFacebook value)? authenticatedFacebook,
     TResult? Function(Unauthenticated value)? unauthenticated,
     TResult? Function(Error value)? error,
   }) {
@@ -758,6 +981,7 @@ class _$ErrorImpl implements Error {
     TResult Function(Initial value)? initial,
     TResult Function(Loading value)? loading,
     TResult Function(Authenticated value)? authenticated,
+    TResult Function(AuthenticatedFacebook value)? authenticatedFacebook,
     TResult Function(Unauthenticated value)? unauthenticated,
     TResult Function(Error value)? error,
     required TResult orElse(),
