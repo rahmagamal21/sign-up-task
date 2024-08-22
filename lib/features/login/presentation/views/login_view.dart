@@ -76,9 +76,9 @@ class LoginView extends StatelessWidget {
                   return Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text('Welcome ${state.userData['name']}'),
+                      Text('Welcome ${state.userData['name'] ?? ''}'),
                       const SizedBox(height: 16),
-                      Text(state.userData['email']),
+                      Text(state.userData['email'] ?? ''),
                       const SizedBox(height: 16),
                       ElevatedButton(
                         onPressed: () {
